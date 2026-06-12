@@ -1,0 +1,10 @@
+---
+- name: Obtain Let's Encrypt certificate
+  command: >
+    certbot --nginx
+    -d {{ certbot_domain }}
+    --non-interactive
+    --agree-tos
+    -m {{ certbot_email }}
+  args:
+    creates: /etc/letsencrypt/live/{{ certbot_domain }}/fullchain.pem

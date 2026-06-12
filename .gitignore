@@ -3,9 +3,14 @@
 
 # Ansible vault secrets
 *.vault
+vault.yml
 vault_pass.txt
 
+# Ansible personal data
+ansible/group_vars/all.yml
+
 # SSH private keys
+.ssh/
 *.pem
 *.key
 id_rsa

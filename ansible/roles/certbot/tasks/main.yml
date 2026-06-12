@@ -1,0 +1,18 @@
+---
+- name: Install certbot packages
+  apt:
+    name:
+      - certbot
+      - python3-certbot-nginx
+    state: present
+    update_cache: yes
+
+
+- name: Check certbot exists
+  command: certbot --version
+  register: certbot_check
+  changed_when: false
+
+
+- name: Run SSL issuance
+  import_tasks: ssl.yml

@@ -1,0 +1,2 @@
+certbot_domain: example.com
+certbot_email: admin@example.com
