@@ -1,17 +1,15 @@
 ---
 - name: Configure Ubuntu server
   hosts: servers
-
   become: yes
 
   roles:
     - docker
     - nginx
     - certbot
+    - monitoring
 
   tasks:
-
-
     - name: Update apt cache
       apt:
         update_cache: yes
@@ -22,6 +20,5 @@
         name:
           - curl
           - neovim
-
           - htop
         state: present
