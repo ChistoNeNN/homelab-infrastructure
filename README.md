@@ -13,8 +13,8 @@ Infrastructure automated with Ansible.
 - Docker
 - Nginx
 - SSL
-- Prometheus (WIP!)
-- Grafana (WIP!)
+- Prometheus
+- Grafana
 
 
 ## Architecture
@@ -26,7 +26,7 @@ Nginx
  |
 Docker
  |
-Monitoring (WIP!)
+Monitoring
 
 
 ## Deployment
@@ -46,7 +46,7 @@ ansible-playbook playbook.yml
 After deployment:
 
 Grafana:
-http://server-ip:3000
+http://grafana.domain.com
 
 Prometheus:
-http://server-ip:9090
+http://prometheus.domain.com
