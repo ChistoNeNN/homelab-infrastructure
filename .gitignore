@@ -1,1 +1,43 @@
+# Ansible temporary files
+*.retry
 
+# Ansible vault secrets
+*.vault
+vault_pass.txt
+
+# SSH private keys
+*.pem
+*.key
+id_rsa
+id_ed25519
+id_ecdsa
+
+
+# Environment files
+.env
+.env.*
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.backup
+
+*.tfvars
+
+# Docker
+docker-data/
